@@ -1,4 +1,4 @@
-package lambda1;
+package JavaCours.lambda.FileFilter;
 import java.io.File;
 import java.io.FileFilter;
 
