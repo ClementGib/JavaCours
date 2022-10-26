@@ -9,7 +9,7 @@
 **Tous les cours que je prépare ou révise sur l'univers de Java**
 
 - Lambda
-  - FileFilter et les classes anonymes
+  - Les classes anonymes et FileFilter 
 
 
 ## English 🇬🇧
@@ -17,4 +17,4 @@
 
 
 - Lambda
-  - FileFilter and anonymous classes
+  - Anonymous classes and FileFilter 
