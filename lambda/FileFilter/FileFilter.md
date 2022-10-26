@@ -1,6 +1,4 @@
-# FileFilter 📁 and anonymous classes 😐
 
-# Languages
 
 [Français](#français-)
 &
@@ -8,6 +6,10 @@
 
 
 ## Français 🇫🇷
+
+# Les classes anonymes 😐 et FileFilter 📁
+
+
 **Lambda expression est une fonctionnalité ajouté dans Java 8 *(JDK8 - JSR 335)***
 
 
@@ -109,4 +111,7 @@ L'implémentation peut se faire en toute simplicité grâce à l'operateur fléc
 
 
 ## English 🇬🇧
+
+# Anonymous classes 😐 and anonymous classes 😐 
+
 Lambda expression is a feature introduced in Java 8 *(JDK8 - JSR 335)*
