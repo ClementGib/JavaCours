@@ -10,13 +10,13 @@ public class FileFilterTest {
         // Using anonymous class that implements the interface
         // FileFilter fileFilter = new FileFilter() {
         //     @Override
-        //     public boolean accept(File file) {
-        //         return file.getName().endsWith(".java");
+        //     public boolean accept(File pathname) {
+        //         return pathname.getName().endsWith(".java");
         //     }
         // };
 
         // Using lambda expression that implements the interface
-        FileFilter fileFilter = (File file) -> file.getName().endsWith(".java");
+        FileFilter fileFilter = (File pathname) -> pathname.getName().endsWith(".java");
 
         File directory = new File(".");
         File[] javaFiles = directory.listFiles(fileFilter);

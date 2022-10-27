@@ -5,7 +5,7 @@ import java.io.FileFilter;
 public class JavaFileFilter implements FileFilter{
 
     @Override
-    public boolean accept(File file) {
-        return file.getName().endsWith(".java");
+    public boolean accept(File pathname) {
+        return pathname.getName().endsWith(".java");
     }
 }
