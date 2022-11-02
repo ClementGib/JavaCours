@@ -25,7 +25,7 @@ Avant de répondre à cette question, il faut savoir ce qu'est une `classe anony
     class testAnonymousClass {  
         public static void main(String args[]){
             Person person = new Person() {
-                void eat() {
+                void speak() {
                     System.out.println("Hello world!");
                 }
             };
@@ -36,7 +36,9 @@ Avant de répondre à cette question, il faut savoir ce qu'est une `classe anony
 
 Java était donc déja capable d'implémenter une classe ou une interface directement avec les `classes anonymes` et ça avant Java 8 et les Lambdas ! 😮
 
-Prenons maintenant un exemple d'implémentation `FileFilter` ajouté à la version 1.2 (1998) de Java, une simple interface de `java.io`:
+
+<br>
+Prenons maintenant un exemple d'implémentation avec `FileFilter` une interface ajouté à la version 1.2 de Java (1998) dans le package de `java.io`:
 
 ```java
 /* java.io.FileFilter.java */
@@ -45,6 +47,7 @@ interface FileFilter{
 }
 ```
 
+<br>
 L'interface `FileFilter` est principalement prévu pour être utilisé avec la méthode `listFiles(FileFilter)` de `java.io`:
 
 ```java
@@ -58,6 +61,7 @@ public class JavaFileFilter implements FileFilter {
 }
 ```
 
+<br>
 Après avoir créer une implémentation, il est possible de l'utiliser pour la passer à la méthode `java.io.File.listFiles`:
 
 ```java
@@ -74,8 +78,10 @@ Après avoir créer une implémentation, il est possible de l'utiliser pour la p
     }
 ```
 
- `listFiles` va utiliser le comportement défini dans notre implémentation, dans ce cas précis il va vérifier chacun des fichier dans le répertoire courant pour s'assurer qu'ils ont l'extension `.java`, si c'est `true` il va ajouter le nom au tableau de `File` et ensuite les afficher dans la console:
+ `listFiles` va utiliser le comportement défini dans notre implémentation, dans ce cas précis il va vérifier chacun des fichier dans le répertoire courant pour s'assurer qu'ils ont l'extension `.java`, si c'est `true` il va ajouter le nom au tableau de `File` pour ensuite l'afficher dans la console.
 
+
+<br>
 Il est toutefois possible d'implémenter une interface fonctionelle sans créer une classe externe, grâce justement aux `classes anonymes`:
 
 ```java
@@ -89,7 +95,8 @@ Il est toutefois possible d'implémenter une interface fonctionelle sans créer 
 ```
 
 
-Pour l'utiliser l'implémentation directement: 
+<br>
+Pour utiliser l'implémentation directement: 
 
 ```java
 /* FileFilterTest.java */
@@ -115,8 +122,10 @@ C'est pourquoi, nous avons besoin d'outils plus moderne pour produire du code pl
 Donc si je dois répondre à la question: 
 - *Ca sert à quoi les lambdas ?*
 
-**la réponse est :** les lambdas sont juste un moyen d'implémenter des interfaces/classes tout en facilitant l'écriture et la lisibilitée comme la maintenabilitée du code: 
+**les lambdas sont juste un moyen d'implémenter des interfaces ou des classes tout en facilitant l'écriture et lisibilitée mais aussi maintenabilitée du code.**
 
+<br>
+Implémentation à l'aide d'une lambda:
 ```java 
 /* FileFilterTest.java */
     public static void main(String[] args) {
@@ -129,12 +138,14 @@ Donc si je dois répondre à la question:
         }
     }
 ```
+
 L'implémentation peut se faire en toute simplicité grâce à :
-- L'`operateur fléche` **:** `->`
-- Les `closures` aussi appelé les `méthodes anonymes` **:** `() -> {System.out.println("Java");}`
+- lambda expressions appelé aussi des `méthodes anonymes`
+- Elle utilise donc l'`operateur fléche` **:** `->`
+- Et peut utiliser des `closures` permettant d'entourer un scope `() -> {System.out.println("Java");}`
 
-
-*Lambda expressions sont très populaire mais relativement nouvelles dans l'univer Java mais pas dans le monde de la programmation car elles était déja utilisé avec le langage LISP dans les années soixantes.*
+**TIPS:**
+*Lambda expressions sont très populaire mais relativement nouvelles dans l'univer Java. Toutefois elles ne sont pas nouvelles dans le monde de la programmation car elles était déja utilisé avec le langage LISP dans les années soixantes.*
 
 *Il existe une différence entre les classes anonymes et les lambdas, les lambda ne peuvent pas avoir d'état (champs/membres) quand les classes anonymes peuvent en avoir un. C'est logique car car les lambdas sont une sorte de programamtion fonctionnelle et non pas Programmation Orienté Objet*
 
