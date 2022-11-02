@@ -144,7 +144,6 @@ L'implémentation peut se faire en toute simplicité grâce à :
 - Elle utilise donc l'`operateur fléche` **:** `->`
 - Et peut utiliser des `closures` permettant d'entourer un scope `() -> {System.out.println("Java");}`
 
-**TIPS:**
 
 *Lambda expressions sont très populaire mais relativement nouvelles dans l'univer Java. Toutefois elles ne sont pas nouvelles dans le monde de la programmation car elles était déja utilisé avec le langage LISP dans les années soixantes.*
 
