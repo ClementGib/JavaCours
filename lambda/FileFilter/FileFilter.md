@@ -120,12 +120,14 @@ Il faut savoir qu'un/une développeur/développeuse passe beaucoup plus de temps
 
 C'est pourquoi, nous avons besoin d'outils plus moderne pour produire du code plus concis.
 Donc si je dois répondre à la question: 
-- *Ca sert à quoi les lambdas ?*
+- **Ca sert à quoi les lambdas ?**
 
 **les lambdas sont juste un moyen d'implémenter des interfaces ou des classes tout en facilitant l'écriture et lisibilitée mais aussi maintenabilitée du code.**
 
 <br>
+
 Implémentation à l'aide d'une lambda:
+
 ```java 
 /* FileFilterTest.java */
     public static void main(String[] args) {
@@ -144,6 +146,7 @@ L'implémentation peut se faire en toute simplicité grâce à :
 - Elle utilise donc l'`operateur fléche` **:** `->`
 - Et peut utiliser des `closures` permettant d'entourer un scope `() -> {System.out.println("Java");}`
 
+**TIPS:**
 
 *Lambda expressions sont très populaire mais relativement nouvelles dans l'univer Java. Toutefois elles ne sont pas nouvelles dans le monde de la programmation car elles était déja utilisé avec le langage LISP dans les années soixantes.*
 
