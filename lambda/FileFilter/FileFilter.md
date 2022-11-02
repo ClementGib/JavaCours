@@ -146,8 +146,8 @@ L'implémentation peut se faire en toute simplicité grâce à :
 - Elle utilise donc l'`operateur fléche` **:** `->`
 - Et peut utiliser des `closures` permettant d'entourer un scope `() -> {System.out.println("Java");}`
 
-**TIPS:**
 
+**TIPS:**
 *Lambda expressions sont très populaire mais relativement nouvelles dans l'univer Java. Toutefois elles ne sont pas nouvelles dans le monde de la programmation car elles était déja utilisé avec le langage LISP dans les années soixantes.*
 
 *Il existe une différence entre les classes anonymes et les lambdas, les lambda ne peuvent pas avoir d'état (champs/membres) quand les classes anonymes peuvent en avoir un. C'est logique car car les lambdas sont une sorte de programamtion fonctionnelle et non pas Programmation Orienté Objet*
