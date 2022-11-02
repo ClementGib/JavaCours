@@ -162,7 +162,7 @@ L'implémentation peut se faire en toute simplicité grâce à :
 
 - *What is a lambda expression ?*
 
-Before answering this question, we need to know what is a `anonymous class`. A `anonymous class` is a way to declare a new class without giving it a name and create an instance at the same time.
+Before answering this question, we need to know what is a `anonymous class`. An `anonymous class` is a way to declare a new class without giving it a name and create an instance at the same time.
 
 ```java
     abstract class Person {  
